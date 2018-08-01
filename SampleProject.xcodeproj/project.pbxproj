@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A26331C2111A4EE005715C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6AA6B7C620E3637F000D5B3F /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA6B7C920E3637F000D5B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA6B7CB20E3637F000D5B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A26331B2111A4EE005715C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A26331C2111A4EE005715C4 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AA6B7BD20E3637F000D5B3F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +90,7 @@
 				6AA6B7DD20E36380000D5B3F /* SampleProjectTests */,
 				6AA6B7E820E36380000D5B3F /* SampleProjectUITests */,
 				6AA6B7C720E3637F000D5B3F /* Products */,
+				6A26331B2111A4EE005715C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
