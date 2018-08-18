@@ -17,10 +17,22 @@ class ViewController: UIViewController {
         let label = UILabel(frame: CGRect(x: 100, y: 100, width: 200, height: 50))
         label.text = "Hello World!"
         self.view.addSubview(label)
+
+        let nextButton = UIButton(frame: CGRect(x:0, y:0, width:100, height:100))
+        nextButton.setTitle("Go!", for: .normal)
+        nextButton.backgroundColor = UIColor.blue
+        nextButton.addTarget(self, action: #selector(ViewController.goNext(_:)), for: .touchUpInside)
+        view.addSubview(nextButton)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @objc func goNext(_ sender: UIButton) {
+        let nextvc = NextViewController()
+        nextvc.view.backgroundColor = UIColor.blue
+        self.present(nextvc, animated: true, completion: nil)
     }
 }
