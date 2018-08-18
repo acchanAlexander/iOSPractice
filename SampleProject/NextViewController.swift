@@ -18,6 +18,12 @@ class NextViewController: UIViewController {
         backButton.backgroundColor = UIColor.white
         backButton.addTarget(self, action: #selector(NextViewController.back(_:)), for: .touchUpInside)
         view.addSubview(backButton)
+
+        let goButton = UIButton(frame: CGRect(x:100, y:0, width:100, height:100))
+        goButton.setTitle("Go", for: .normal)
+        goButton.backgroundColor = UIColor.red
+        goButton.addTarget(self, action: #selector(NextViewController.goNext(_:)), for: .touchUpInside)
+        view.addSubview(goButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,5 +32,11 @@ class NextViewController: UIViewController {
 
     @objc func back(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+    }
+
+    @objc func goNext(_ sender: UIButton) {
+        let next2vc = Next2ViewController()
+        next2vc.view.backgroundColor = UIColor.red
+        self.navigationController?.pushViewController(next2vc, animated: true)
     }
 }

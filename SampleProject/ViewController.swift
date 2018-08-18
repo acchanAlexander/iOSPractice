@@ -32,7 +32,8 @@ class ViewController: UIViewController {
 
     @objc func goNext(_ sender: UIButton) {
         let nextvc = NextViewController()
+        let navivc = UINavigationController(rootViewController: nextvc)
         nextvc.view.backgroundColor = UIColor.blue
-        self.present(nextvc, animated: true, completion: nil)
+        self.present(navivc, animated: true, completion: nil)
     }
 }
