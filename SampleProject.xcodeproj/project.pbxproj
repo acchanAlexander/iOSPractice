@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A2B267F212C0DDF006BAA9E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B267E212C0DDF006BAA9E /* SplashViewController.swift */; };
 		6AA6B7CA20E3637F000D5B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6B7C920E3637F000D5B3F /* AppDelegate.swift */; };
 		6AA6B7CC20E3637F000D5B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6B7CB20E3637F000D5B3F /* ViewController.swift */; };
 		6AA6B7CF20E3637F000D5B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6B7CD20E3637F000D5B3F /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		6A26331C2111A4EE005715C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6A2B267E212C0DDF006BAA9E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		6AA6B7C620E3637F000D5B3F /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA6B7C920E3637F000D5B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA6B7CB20E3637F000D5B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				6AA6B7D520E3637F000D5B3F /* Info.plist */,
 				6AD741D12127FCD400F518FD /* NextViewController.swift */,
 				6AD741D3212801CF00F518FD /* Next2ViewController.swift */,
+				6A2B267E212C0DDF006BAA9E /* SplashViewController.swift */,
 			);
 			path = SampleProject;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				6AA6B7CC20E3637F000D5B3F /* ViewController.swift in Sources */,
 				6AD741D22127FCD400F518FD /* NextViewController.swift in Sources */,
 				6AA6B7CA20E3637F000D5B3F /* AppDelegate.swift in Sources */,
+				6A2B267F212C0DDF006BAA9E /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
