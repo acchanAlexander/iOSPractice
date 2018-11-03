@@ -23,6 +23,13 @@ class ViewController: UIViewController {
         nextButton.backgroundColor = UIColor.blue
         nextButton.addTarget(self, action: #selector(ViewController.goNext(_:)), for: .touchUpInside)
         view.addSubview(nextButton)
+
+        print("start")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            // 0.5秒後に実行したい処理
+            print("end")
+            self.goNextAuto()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +38,13 @@ class ViewController: UIViewController {
     }
 
     @objc func goNext(_ sender: UIButton) {
+        let nextvc = NextViewController()
+        let navivc = UINavigationController(rootViewController: nextvc)
+        nextvc.view.backgroundColor = UIColor.blue
+        self.present(navivc, animated: true, completion: nil)
+    }
+
+    @objc func goNextAuto() {
         let nextvc = NextViewController()
         let navivc = UINavigationController(rootViewController: nextvc)
         nextvc.view.backgroundColor = UIColor.blue
