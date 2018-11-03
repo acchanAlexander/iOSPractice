@@ -25,11 +25,30 @@ class ViewController: UIViewController {
         view.addSubview(nextButton)
 
         print("start")
+
+        let url = URL(string: "https://hogehoge/")
+        let request = URLRequest(url: url!)
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            if error == nil, let data = data, let response = response as? HTTPURLResponse {
+                // HTTPヘッダの取得
+                print("Content-Type: \(response.allHeaderFields["Content-Type"] ?? "")")
+                // HTTPステータスコード
+                print("statusCode: \(response.statusCode)")
+                // JSONからDictionaryへ変換
+                let dic = try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
+                print("status: \(dic["status"] as! Int)")
+                print("releaseVersionName: \(dic["releaseVersionName"] as! String)")
+            }
+            }.resume()
+
+        /*
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             // 0.5秒後に実行したい処理
             print("end")
             self.goNextAuto()
         }
+        */
     }
 
     override func didReceiveMemoryWarning() {
